@@ -30,5 +30,15 @@ module "root_baseline" {
   create_organization = var.create_organization
 
   child_accounts = var.child_accounts
+
+    # Disable for now
+  # Theory: creation of Config rules takes time
+  enable_encrypted_volumes = false
+  enable_iam_password_policy = false
+  enable_insecure_sg_rules = false
+  enable_rds_storage_encrypted = false
+  enable_root_account_mfa = false
+  enable_s3_bucket_public_read_prohibited  = false
+  enable_s3_bucket_public_write_prohibited = false
 }
 
