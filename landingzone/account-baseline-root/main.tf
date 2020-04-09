@@ -41,7 +41,7 @@ module "root_baseline" {
   enable_s3_bucket_public_read_prohibited  = false
   enable_s3_bucket_public_write_prohibited = false
 
-  kms_key_user_iam_arns  = ["arn:aws:iam::280501332663:root"]
-  kms_key_administrator_iam_arns = ["arn:aws:iam::280501332663:root"]
+  cloudtrail_kms_key_user_iam_arns  = ["arn:aws:iam::280501332663:root"]
+  cloudtrail_kms_key_administrator_iam_arns = ["arn:aws:iam::280501332663:root"]
 }
 
